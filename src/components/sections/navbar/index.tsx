@@ -1,6 +1,9 @@
 "use client"
 
 import React from "react"
+import { Menu } from "lucide-react"
+import Link from "next/link"
+
 import { Logo } from "@/components/ui/logo"
 import { 
     NavigationMenu,
@@ -11,6 +14,20 @@ import {
     NavigationMenuLink,
     navigationMenuTriggerStyle
 } from "@/components/ui/navigation"
+import {
+    Sheet,
+    SheetTrigger,
+    SheetContent,
+    SheetHeader,
+    SheetTitle
+} from "@/components/ui/sheet"
+import { Button } from "@/components/ui/button"
+import {
+    SidebarMenuContainer,
+    SidebarMenu,
+    SidebarMenuContent,
+    SidebarMenuItem
+} from "@/components/ui/sidebarMenu"
 import { ViewContainer } from "@/components/layouts/viewContainer"
 import { cn } from "@/utils/cn"
 
@@ -121,7 +138,52 @@ export const Navbar: React.FunctionComponent = () => {
                     </NavigationMenuList>
                 </NavigationMenu>
                 <div className="lg:hidden">
-
+                    <Sheet>
+                        <SheetTrigger asChild>
+                            <Button variant="secondary" className="p-2">
+                                <Menu className="w-4 h-4" />
+                            </Button>
+                        </SheetTrigger>
+                        <SheetContent>
+                            <SheetHeader>
+                                <SheetTitle>Menu</SheetTitle>
+                            </SheetHeader>
+                            <div className="options w-full h-full flex flex-col justify-between py-12">
+                                <div className="options-wrapper">
+                                <SidebarMenuContainer>
+                                    <SidebarMenu trigger="Solutions">
+                                        <SidebarMenuContent>
+                                            {SolutionOptions.map((option) => (
+                                                <SidebarMenuItem key={option.title}>
+                                                    <Link href={option.href} target="_blank">
+                                                        {option.title}
+                                                    </Link>
+                                                </SidebarMenuItem>
+                                            ))}
+                                        </SidebarMenuContent>
+                                    </SidebarMenu>
+                                    <SidebarMenuContent>
+                                        {['Pricing', 'Docs', 'Blog', 'Discord', 'Talk to us'].map(
+                                            (option, index) => (
+                                            <SidebarMenuItem key={index}>
+                                                {option}
+                                            </SidebarMenuItem>
+                                            ),
+                                        )}
+                                    </SidebarMenuContent>
+                                </SidebarMenuContainer>
+                                </div>
+                                <div className="navbar-cta-wrapper grid gap-3">
+                                    <Button variant="secondary">Login</Button>
+                                    <Button variant="gloss">Get Started</Button>
+                                </div>
+                            </div>
+                        </SheetContent>
+                    </Sheet>
+                </div>
+                <div className="navbar-cta-wrapper flex flex-row items-center justify-end gap-3 max-lg:hidden">
+                    <Button variant="secondary">Login</Button>
+                    <Button>Get Started</Button>
                 </div>
             </ViewContainer>
         </nav>

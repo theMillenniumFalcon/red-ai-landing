@@ -20,3 +20,5 @@ export const ViewContainer = forwardRef<HTMLDivElement, ViewContainerProps>(({ c
     )
   },
 )
+
+ViewContainer.displayName = 'ViewContainer'
