@@ -22,3 +22,5 @@ export const Logo = forwardRef<HTMLImageElement, LogoProps>(({ className, ...arg
     )
   }
 )
+
+Logo.displayName = "Logo"
