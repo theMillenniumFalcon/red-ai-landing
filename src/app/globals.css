@@ -2,32 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  @apply tracking-tight;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+* {
+  scroll-behavior: smooth;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+#cta-section {
+  background-color: white;
+  background-image: url('/media/cta-icons-bg.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+#cta-section {
+  @apply bg-cover max-lg:bg-contain;
+}
+
+@media screen and (max-width: 1024px) {
+  #cta-section {
+    background-image: url('/media/cta-icons-bg-small.svg');
+    background-position-y: 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #cta-section {
+    background-position-y: 12rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #cta-section {
+    background-position-y: 10rem;
   }
 }

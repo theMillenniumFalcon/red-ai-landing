@@ -10,7 +10,7 @@ export const Logo = forwardRef<HTMLImageElement, LogoProps>(({ className, ...arg
     return (
         <Image
             ref={ref}
-            src={"/media/logo.svg"}
+            src={"/media/logo2.svg"}
             className={cn("", className)}
             priority
             quality={100}
