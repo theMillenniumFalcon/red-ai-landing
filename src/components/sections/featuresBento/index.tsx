@@ -6,7 +6,7 @@ import { AnalyseWebsiteUsableExample } from "@/components/ui/usables/analyzeWebs
 import { AnalyseReportsUsableExample } from "@/components/ui/usables/analyzeReports"
 import { UsageOptionsUsableExample } from "@/components/ui/usables/usageOptions"
 
-export const FeaturesBento = () => {
+export const FeaturesBentoSection = () => {
   return (
     <SectionContainer id="features-bento">
       <ViewContainer>
