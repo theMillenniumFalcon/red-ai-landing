@@ -4,6 +4,7 @@ import { HeroSection } from "@/components/sections/hero"
 import { BasicFeatureSection } from "@/components/sections/basicFeatures"
 import { FeaturesBentoSection } from "@/components/sections/featuresBento"
 import { HowToUseSection } from "@/components/sections/howToUse"
+import { BuildIdeaSection } from "@/components/sections/buildIdea"
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
       <HeroSection />
       <BasicFeatureSection />
       <FeaturesBentoSection />
-      <HowToUseSection />   
+      <HowToUseSection />
+      <BuildIdeaSection />
     </div>
   )
 }
