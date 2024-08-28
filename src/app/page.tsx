@@ -11,6 +11,7 @@ import { PartnerSection } from "@/components/sections/partner"
 import { SecuritySection } from "@/components/sections/security"
 import { DataLoaderSection } from "@/components/sections/dataLoader"
 import { TestimonialSection } from "@/components/sections/testimonial"
+import { InvestorSection } from "@/components/sections/investor"
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <SecuritySection />
       <DataLoaderSection />
       <TestimonialSection />
+      <InvestorSection />
     </div>
   )
 }
