@@ -58,7 +58,7 @@ export const SecuritySection = () => {
               variant="gloss"
               withArrow
               size="lg"
-              onClick={() => window.open("https://www.stack-ai.com/")}>
+              onClick={() => window.open("")}>
               Start for free
             </Button>
           </CTAList>

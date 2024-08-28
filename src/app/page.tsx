@@ -9,6 +9,7 @@ import { ModelsUsedSection } from "@/components/sections/modelsUsed"
 import { GetStartedWithDocumentationSection } from "@/components/sections/getStartedWithDocumentation"
 import { PartnerSection } from "@/components/sections/partner"
 import { SecuritySection } from "@/components/sections/security"
+import { DataLoaderSection } from "@/components/sections/dataLoader"
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <GetStartedWithDocumentationSection />
       <PartnerSection />
       <SecuritySection />
+      <DataLoaderSection />
     </div>
   )
 }
