@@ -13,6 +13,7 @@ import { DataLoaderSection } from "@/components/sections/dataLoader"
 import { TestimonialSection } from "@/components/sections/testimonial"
 import { InvestorSection } from "@/components/sections/investor"
 import { FooterSection } from "@/components/sections/footer"
+import { CTASection } from "@/components/sections/cta"
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
       <TestimonialSection />
       <InvestorSection />
       <FooterSection />
+      <CTASection />
     </div>
   )
 }
