@@ -6,6 +6,7 @@ import { FeaturesBentoSection } from "@/components/sections/featuresBento"
 import { HowToUseSection } from "@/components/sections/howToUse"
 import { BuildIdeaSection } from "@/components/sections/buildIdea"
 import { ModelsUsedSection } from "@/components/sections/modelsUsed"
+import { GetStartedWithDocumentationSection } from "@/components/sections/getStartedWithDocumentation"
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <HowToUseSection />
       <BuildIdeaSection />
       <ModelsUsedSection />
+      <GetStartedWithDocumentationSection />
     </div>
   )
 }
