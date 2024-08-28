@@ -21,7 +21,7 @@ const BasicFeatureList: FeatureContentProps[] = [
   {
     icon: "security",
     title: "Enterprise-Grade Security",
-    description: "Red AI is SOC2, HIPAA, and GDPR compliant, and has DPAs signed with the main AI providers, such as Anthropic and OpenAI.",
+    description: "Stack AI is SOC2, HIPAA, and GDPR compliant, and has DPAs signed with the main AI providers, such as Anthropic and OpenAI.",
   },
   {
     icon: "support",
@@ -45,7 +45,7 @@ export const BasicFeatureSection = () => {
           <CTAList>
             <Link href="#features-bento" className="grid">
               <Button size="lg" withArrow>
-                Experience Red AI
+                Experience Stack AI
               </Button>
             </Link>
           </CTAList>

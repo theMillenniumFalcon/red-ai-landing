@@ -33,7 +33,7 @@ export const HeroSection = () => {
           onClick={() =>
             window.open('')
           }>
-          {'Build for Enterprises using Red AI'}
+          {'Build for Enterprises using Stack AI'}
           <div className="flex flex-row px-3 py-1 bg-blue-500 text-white w-fit rounded-full text-xs">
             new
           </div>
