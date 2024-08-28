@@ -7,6 +7,7 @@ import { HowToUseSection } from "@/components/sections/howToUse"
 import { BuildIdeaSection } from "@/components/sections/buildIdea"
 import { ModelsUsedSection } from "@/components/sections/modelsUsed"
 import { GetStartedWithDocumentationSection } from "@/components/sections/getStartedWithDocumentation"
+import { PartnerSection } from "@/components/sections/partner"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <BuildIdeaSection />
       <ModelsUsedSection />
       <GetStartedWithDocumentationSection />
+      <PartnerSection />
     </div>
   )
 }
