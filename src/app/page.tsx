@@ -10,6 +10,7 @@ import { GetStartedWithDocumentationSection } from "@/components/sections/getSta
 import { PartnerSection } from "@/components/sections/partner"
 import { SecuritySection } from "@/components/sections/security"
 import { DataLoaderSection } from "@/components/sections/dataLoader"
+import { TestimonialSection } from "@/components/sections/testimonial"
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <PartnerSection />
       <SecuritySection />
       <DataLoaderSection />
+      <TestimonialSection />
     </div>
   )
 }

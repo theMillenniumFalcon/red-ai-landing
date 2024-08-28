@@ -41,7 +41,7 @@ const DocsContentBlocks: DocsContentBlockType[] = [
   },
 ]
 
-export function GetStartedWithDocumentationSection() {
+export const GetStartedWithDocumentationSection = () => {
   return (
     <SectionContainer id="get-started-with-docs">
       <ViewContainer className="flex flex-row items-center justify-center gap-24">
