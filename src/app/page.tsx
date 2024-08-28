@@ -12,6 +12,7 @@ import { SecuritySection } from "@/components/sections/security"
 import { DataLoaderSection } from "@/components/sections/dataLoader"
 import { TestimonialSection } from "@/components/sections/testimonial"
 import { InvestorSection } from "@/components/sections/investor"
+import { FooterSection } from "@/components/sections/footer"
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <DataLoaderSection />
       <TestimonialSection />
       <InvestorSection />
+      <FooterSection />
     </div>
   )
 }
